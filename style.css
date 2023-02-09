@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+:root{
+    --white : #fff;
+    --whitesmoke : #f9f9f9;
+    --light-grey:#ececec;
+    --grey:#c4c4c4;
+    --medium-grey:#a7a7a7;
+    --deep-grey: #343434;
+    --black:#000000;
+    --blue : #1b77f3;
+    --red:#cf3c3f;
+}
+
+main{
+    display: flex;
+    text-align: center;
+}
+
+
+
+.left{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.login_conteiner{
+    position: absolute;
+    left: 60px;
+    top: 80px;
+    width: 70%;
+
+}
+
+.logo{
+    width: 35%;
+    margin-bottom: 10%;
+}
+
+.login{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 6%;
+    
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.active_username{
+    position: absolute;
+    top: 68px;
+    left: 2px;
+    font-size: 0.7em;
+    margin: 8px 10px;
+    visibility: hidden;
+}
+.active_password{
+    position: absolute;
+    bottom: 51px;
+    font-size: 0.7em;
+    left: 10px;
+    visibility: hidden;
+}
+
+.input>input{
+    width: 100%;
+    margin: 20px;
+    padding: 25px 10px 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: var(--light-grey);
+    outline: none;
+    text-align: left;
+}
+
+.input>input:focus{
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+
+}
+
+
+
+.input>input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    cursor: text;
+    margin: 20px;
+}
+
+
+.login_logos{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.facebook{
+    background: var(--blue);
+    width: 33.3%;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.facebook>img{
+    width: 30px;
+    margin-top: 5%;
+}
+
+.google{
+    height: 40px;
+    width: 33.3%;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--light-grey);
+}
+
+.google>img{
+    width: 30px;
+    margin-top: 5%;
+}
+.apple{
+    background: var(--black);
+    width: 33.3%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.apple>img{
+    width: 25px;
+    margin-top: 4%;
+}
+
+.checkbox{
+    margin: 15px 0 50px;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox>input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--grey);
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.checkbox>input:checked{
+    background-color: var(--red);
+}
+
+.checkbox>input:checked:after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid white;
+    margin: 2px 6px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+button{
+    margin-bottom: 30px;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+
+button:disabled{
+    cursor: auto;
+    background-color: white;
+    border: 2px solid var(--light-grey);
+}
+
+
+.div_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_link>a{
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: var(--medium-grey);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.div_link>a:hover{
+    transition: 0.5s;
+    color: var(--red);
+}
+
+
+
+.wallpaper{
+    width: 100%;
+    background-image: url('./images/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
